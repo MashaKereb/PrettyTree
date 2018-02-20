@@ -3,22 +3,22 @@ Pretty tree
 A script for parsing trees from a string and printing then to the terminal.
 (Works like
 [asciitree](http://pythonhosted.org/asciitree/))
-##Input
+## Input
  ```
  "(asciitree (sometimes you) (just (want to draw)) trees (in (your terminal)))"
 ```
 
-##Result
+## Result
 ```
 asciitree
  +-- sometimes
  |    +-- you
  +-- just
  |    +-- want
- |    +-- to
- |    +-- draw
+ |         +-- to
+ |         +-- draw
  +-- trees
-      +-- in
-           +-- your
-                +-- terminal
+ +-- in
+      +-- your
+           +-- terminal
 ```

@@ -20,7 +20,7 @@ class Parser:
         if token == '(':
             new_node = Tree(tokens.pop(0))
             while tokens[0] != ')':
-                new_node.add(cls.build_tree(tokens))
+                new_node.add_children(cls.build_tree(tokens))
             tokens.pop(0)    # pop off ')'
             return new_node
 

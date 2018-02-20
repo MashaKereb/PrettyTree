@@ -16,7 +16,7 @@ class Tree:
         if not is_root:
             components.append(prefix)
             components.append(self.root)
-            components.append(self.content)
+        components.append(self.content)
         components.append("\n")
 
         prefix = self.update_prefix(prefix, is_root, is_last)
